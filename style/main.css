@@ -82,6 +82,10 @@ header nav a:hover {
     color: black;
 }
 
+a {
+    text-decoration: none;
+}
+
 .botao i {
     margin-right: 8px;
 }
@@ -116,4 +120,41 @@ footer {
 hr {
     border: 1px solid #e50914;
     margin-bottom: 15px;
+}
+
+.modal {
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    width: 720px;
+    max-width: 720px;
+    height: 415px;
+}
+
+#ficha-tecnica {
+    background-color: #141414;
+    justify-items: center;
+    align-items: center;
+}
+
+#ficha-tecnica h3 {
+    margin: 10px;
+    padding: 10px;
+}
+
+.info {
+    display: flex;
+    max-height: 415px;
+    justify-content: space-around;
+}
+
+.info ul {
+    margin: 0 15px;
+    padding: 15px;
+}
+
+.bloco {
+    width: 300px;
+    max-width: 300px;
+    height: 300px;
 }

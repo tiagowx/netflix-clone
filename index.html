@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
-    <!--respossividade-->
-    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <!-- owl css -->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <!--CustomStyles-->
+    <link rel="stylesheet" href="style/main.css">
+    <!--respossividade-->
+    <link rel="stylesheet" href="style/responsive.css">
     <title>NETFLIX CLONE</title>
 </head>
 
@@ -28,23 +30,23 @@
     </header>
 
     <main>
-        <div class="filme-principal" portrait/>
-        <div class="container">
-            <h3 class="titulo">HOUSE OF CARDS</h3>
-            <p class="descricao">O congressista Francis Underwood e sua mulher, Claire, fazem de tudo para conquistar seus objetivos, não importa o que aconteça. Um mundo político recheado de ganância, corrupção e luxúria na capital Washington.</p>
-        </div>
-        <div class="botoes">
-            <button role="button" class="botao">
-                    <i class="fas fa-play"></i>
-                ASSISTIR AGORA
-              </button>
-            <button role="button" class="botao">
-                    <i class="fas fa-info-circle"></i>
-                MAIS INFORMAÇÕES
-              </button>
-        </div>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">HOUSE OF CARDS</h3>
+                <p class="descricao">O congressista Francis Underwood e sua mulher, Claire, fazem de tudo para conquistar seus objetivos, não importa o que aconteça. Um mundo político recheado de ganância, corrupção e luxúria na capital Washington.</p>
+            </div>
+            <div class="botoes">
+                <a role="button" class="botao" href="#trailer-hoc" rel="modal:open">
+                    <i class="fas fa-play"></i> ASSISTIR AGORA
+                </a>
+                <a role="button" class="botao" href="#ficha-tecnica" rel="modal:open">
+                    <i class="fas fa-info-circle"></i> MAIS INFORMAÇÕES
+                </a>
+            </div>
         </div>
     </main>
+
+
     <section id="destaques">
         <div class="carousel-filmes container">
             <h3 class="categories">Destaques</h3>
@@ -193,6 +195,70 @@
         </div>
     </section>
 
+    <!--Modals-->
+    <!-- Modal HTML embedded directly into document -->
+    <div id="trailer-hoc" class="modal">
+        <iframe width="720" height="415" src="https://www.youtube.com/embed/8QnMmpfKWvo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div id="ficha-tecnica" class="modal">
+        <h3>House of Cards</h3>
+        <div class="info">
+
+            <div class="bloco">
+                <h4>Informação geral</h4>
+                <ul>
+                    <li>
+                        <p>Formato: série</p>
+                    </li>
+                    <li>
+                        <p>Gênero: Drama político</p>
+                    </li>
+                    <li>
+                        <p>Duração: 43–59 minutos</p>
+                    </li>
+                    <li>
+                        <p>Criador(es): Beau Willimon</p>
+                    </li>
+                    <li>
+                        <p>Baseado em: House of Cards de Michael Dobbs</p>
+                    </li>
+                    <li>
+                        <p>País de origem: Estados Unidos</p>
+                    </li>
+                    <li>
+                        <p>Idioma original: inglês</p>
+                    </li>
+                    <li>
+                        <p>Tema de abertura: House Of Cards Main Title Theme</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="bloco">
+                <h4>Elenco</h4>
+                <ul>
+                    <li>
+                        <p>Kevin Spacey</p>
+                    </li>
+                    <li>
+                        <p>Robin Wright</p>
+                    </li>
+                    <li>
+                        <p>Kate Mara</p>
+                    </li>
+                    <li>
+                        <p>Corey Stoll</p>
+                    </li>
+                    <li>
+                        <p>Michael Kelly</p>
+                    </li>
+                    <li>
+                        <p>Kristen Connolly</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <hr>
         <div>
@@ -205,7 +271,7 @@
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/setup.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 </body>
 
 </html>
