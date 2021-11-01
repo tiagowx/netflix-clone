@@ -103,3 +103,17 @@ header nav a:hover {
 .carousel-filmes {
     margin-top: 5px;
 }
+
+.categories {
+    margin: 10px 0;
+}
+
+footer {
+    margin: 20px;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #e50914;
+    margin-bottom: 15px;
+}
